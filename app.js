@@ -15,14 +15,14 @@
 
 
 //step 1
-let enteredInputElement = document.getElementById('product-name');
-let remainingCharElement = document.getElementById('remaining-chars');
+const enteredInputElement = document.getElementById('product-name');
+const remainingCharElement = document.getElementById('remaining-chars');
 
-let maxAllowedCharacters = enteredInputElement.maxLength;
+const maxAllowedCharacters = enteredInputElement.maxLength;
 
 function updateRemainingChar(event){
-    let enteredText = event.target.value;
-    let enteredTextLength = enteredText.length;
+    const enteredText = event.target.value;
+    const enteredTextLength = enteredText.length;
     
     let updatedCharElement = maxAllowedCharacters - enteredTextLength;
     remainingCharElement.textContent = updatedCharElement;
