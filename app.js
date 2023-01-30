@@ -29,3 +29,10 @@ function updateRemainingChar(event){
 }
 
 enteredInputElement.addEventListener('input', updateRemainingChar);
+
+//control structures - loops and conditions.
+const myName = 'steve';
+
+if(myName == 'steve'){
+    console.log('Hello there');
+}
