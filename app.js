@@ -26,13 +26,18 @@ function updateRemainingChar(event){
     
     let updatedCharElement = maxAllowedCharacters - enteredTextLength;
     remainingCharElement.textContent = updatedCharElement;
+
+    if(updatedCharElement <= 10 ){
+        remainingCharElement.classList.add('warning');
+        enteredInputElement.classList.add('warning');
+    }else{
+        remainingCharElement.classList.remove('warning');
+        enteredInputElement.classList.remove('warning');
+    }
 }
 
 enteredInputElement.addEventListener('input', updateRemainingChar);
 
 //control structures - loops and conditions.
-const myName = 'steve';
-
-if(myName == 'steve'){
-    console.log('Hello there');
-}
+//we are using this to set the code to be executed when certain conditions are met, such as the the remaining characters going below 10
+//this is executed from line 30 - the css classes are assumed.
