@@ -41,3 +41,37 @@ enteredInputElement.addEventListener('input', updateRemainingChar);
 //control structures - loops and conditions.
 //we are using this to set the code to be executed when certain conditions are met, such as the the remaining characters going below 10
 //this is executed from line 30 - the css classes are assumed.
+
+// LOOPS
+//for 
+
+for(let i = 0; i < 20; i = i + 8){
+    console.log(i);
+}
+
+//for of
+const users = ['Margai', 'James', 'Wycliffe'];
+
+for(const user of users){
+    console.log(user);
+}
+
+//for in, loops
+const loggedInUser = {
+    name: 'James',
+    age: 32,
+    isAdmin: true
+}
+
+for (propertyName in loggedInUser){
+    console.log(propertyName);
+    console.log(loggedInUser[propertyName]);
+}
+
+let isFinished = false;
+
+while (!isFinished) {
+   isFinished = confirm('Would you love to quit?');
+}
+
+console.log('Done!');
